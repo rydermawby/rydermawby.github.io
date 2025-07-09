@@ -1,43 +1,42 @@
-/* General Reset */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+/* Punk-Inspired Base Styling */
 
 body {
-  font-family: sans-serif;
-  line-height: 1.6;
-  background-color: #f9f9f9;
-  color: #222;
+  font-family: 'Courier New', monospace;
+  background-color: #0f0f0f;
+  color: #f0f0f0;
+  line-height: 1.7;
   padding: 2rem;
   max-width: 900px;
   margin: auto;
+  background-image: radial-gradient(#1a1a1a 1px, transparent 1px);
+  background-size: 40px 40px;
 }
 
 header {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 1rem;
 }
 
 header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.2rem;
-}
-
-nav {
-  margin-top: 1rem;
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #ff0050;
+  margin-bottom: 0.5rem;
 }
 
 nav a {
   margin: 0 1rem;
   text-decoration: none;
-  color: #444;
+  color: #ccc;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 nav a:hover {
-  color: #000;
+  color: #ff0050;
 }
 
 section {
@@ -47,12 +46,21 @@ section {
 h2 {
   font-size: 1.8rem;
   margin-bottom: 1rem;
-  border-bottom: 2px solid #eee;
-  padding-bottom: 0.3rem;
+  color: #ff0050;
+  border-left: 4px solid #ff0050;
+  padding-left: 0.5rem;
 }
 
 .writing-list article {
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-left: 3px solid #888;
+  background-color: #1b1b1b;
+}
+
+.writing-list article:hover {
+  border-left: 3px solid #ff0050;
+  background-color: #222;
 }
 
 .gallery {
@@ -62,21 +70,21 @@ h2 {
 }
 
 .gallery img {
-  max-width: 100%;
-  width: 280px;
-  border: 2px solid #ccc;
-  border-radius: 6px;
-  box-shadow: 1px 1px 4px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
+  width: 260px;
+  border: 3px solid #333;
+  transition: transform 0.3s ease, border 0.3s ease;
 }
 
 .gallery img:hover {
-  transform: scale(1.02);
+  transform: scale(1.03);
+  border-color: #ff0050;
 }
 
 footer {
   text-align: center;
   margin-top: 4rem;
   font-size: 0.9rem;
-  color: #777;
+  color: #999;
+  border-top: 1px solid #444;
+  padding-top: 1rem;
 }
