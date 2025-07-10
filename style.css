@@ -119,9 +119,14 @@ h2 {
   min-width: 250px;
 }
 
+.bio-photo {
+  flex: 1;
+  max-width: 30%;
+  min-width: 200px;
+}
+
 .bio-photo img {
   width: 100%;
-  max-width: 320px;
   object-fit: cover;
   border: 3px solid #000;
   box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
